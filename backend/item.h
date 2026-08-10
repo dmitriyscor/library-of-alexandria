@@ -1,6 +1,5 @@
 #include <string>
 
-
 class Pdf {
 private:
     std::string title;
@@ -19,5 +18,8 @@ public:
     void SetYear(int);
     void SetFilename(std::string);
 
+    const std::string& getTitle() const { return title; }
+    const std::string& getFilename() const { return filename; }
+    int getId() const { return id; }
 
 };
